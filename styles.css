@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #4dcbe4;
+    margin: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Box */
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .box input {
+    width: 450px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .box i {
+    background: #23aeca;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 0 30px 30px 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .box i:hover {
+    background: #23aeca;
+  }
+  
+  /* Specials Section */
+  .specials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .special {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .special img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .add-cart {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .add-cart input[type="checkbox"] {
+    display: none;
+  }
+  
+  .add-cart span {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #ff704d;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .add-cart input[type="checkbox"]:checked + span {
+    background: #23aeca;
+  }
+  
+  /* Menu Section */
+  .menu {
+    background: #fff;
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.1);
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item {;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-item input[type="checkbox"] {
+    display: none;
+  }
+  
+  .menu-item span {
+    display: inline-block;
+    padding: 8px 50px;
+    border-radius: 10px;
+    background-color: #eee;
+    transition: 0.3s;
+  }
+  
+  .menu-item input[type="checkbox"]:checked + span {
+    background-color: #23aeca;
+    color: white;
+  }
+  

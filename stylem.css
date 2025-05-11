@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: #000 20px 20px 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 30%;
+  background-color: #a9dcf6;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 2606px;
+  margin: 0 auto 20px;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.special {
+  margin-bottom: 20px;
+}
+
+.special img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.special p {
+  font-size: 19px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Main Menu */
+.menu {
+  width: 70%;
+  padding: 30px;
+}
+
+.menu h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  position: relative;
+}
+
+.menu h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background: #ccc;
+  margin: 10px auto;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 16px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.qr-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.qr-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.qr-section p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+}

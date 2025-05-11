@@ -1,0 +1,169 @@
+/* stylesheet.css */
+/* login page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 400px;
+    margin-top: -60px;
+}
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.food-image {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    flex: 1;
+    max-width: 500px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #25abba;
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: -60px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background: #fff;
+    padding: 0px 5px;
+    color: #999;
+    pointer-events: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+    transform: translateY(-18px);
+    font-size: 10px;
+    color: #25abba;
+
+}
+
+
+input:focus {
+    border-color: #25abba;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    color: #25abba;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-button {
+    display: inline-block;
+    text-decoration: none !important;
+    /* Remove underline */
+    font-size: 16px;
+    width: 100%;
+    padding: 14px;
+    background-color: #26ada4;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+
+button:hover {
+    background-color: #1e8d9b;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #2e2b2b;
+}
+
+.signup-link a {
+    color: #248d99;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .food-image {
+        height: 200px;
+    }
+
+    .login-container {
+        padding: 40px 30px;
+        max-width: 100%;
+    }
+}
